@@ -16,12 +16,13 @@ Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'https://github.com/kien/ctrlp.vim'
 Plugin 'stanangeloff/php.vim'
+Plugin 'https://github.com/scrooloose/syntastic'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
 
-colorscheme solarized
+colorscheme slate
 set background=dark
 
 " Wrap gitcommit file types at the appropriate length
@@ -40,3 +41,6 @@ set tabstop=2
 set shiftwidth=2
 " On pressing tab, insert 4 spaces
 set expandtab
+
+" Line numbers
+set number
