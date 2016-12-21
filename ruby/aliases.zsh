@@ -1,3 +1,1 @@
-alias sc='script/console'
-alias sg='script/generate'
-alias sd='script/destroy'
+alias rubocop-git-diff='git status --porcelain | cut -c4- | grep '.rb' | grep -v 'db/schema' |xargs rubocop'

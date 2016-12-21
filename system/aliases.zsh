@@ -8,3 +8,7 @@ then
 #  alias ll="gls -l --color"
   alias la='gls -A --color'
 fi
+
+alias ctags="`brew --prefix`/bin/ctags"
+alias build_ctags!="ctags -R --exclude=.git --exclude=log * && ctags -R -a . $(bundle list --paths)"
+alias cat="ccat"

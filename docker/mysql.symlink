@@ -1,0 +1,9 @@
+mysql_docker_start () {
+  MYSQL_DATA="~/Projects/mysql"
+  MYSQL_ROOT_PASSSWORD="my-secret-pw"
+  MYSQL_VERSION='5.5'
+  if [ -d "/path/to/dir" ]
+    docker run --name mysql-server -v $MYSQL_DATA:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=$MYSQL_ROOT_PASSWORD -d mysql/mysql-server:$MYSQL_VERSION
+  end
+}
+
