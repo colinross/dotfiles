@@ -10,5 +10,6 @@ then
 fi
 
 alias ctags="`brew --prefix`/bin/ctags"
-alias build_ctags!="ctags -R --exclude=.git --exclude=log * && ctags -R -a . $(bundle list --paths)"
+alias build_ctags!="ctags -R --exclude=.git --exclude=log *"
 alias cat="ccat"
+alias rubocop-changed="git diff --name-only | xargs rubocop -a"

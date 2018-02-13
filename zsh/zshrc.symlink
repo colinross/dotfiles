@@ -1,3 +1,5 @@
+# Increase the amount of open files a process can have
+ulimit -S -n 2048
 # shortcut to this dotfiles path is $ZSH
 export ZSH=$HOME/.dotfiles
 
@@ -39,3 +41,6 @@ do
 done
 
 unset config_files
+
+# added by travis gem
+[ -f /Users/colinross/.travis/travis.sh ] && source /Users/colinross/.travis/travis.sh

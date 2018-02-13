@@ -32,9 +32,10 @@
         # Setting to git 2.0 default to suppress warning message
 	default = tracking
 [filter "lfs"]
-	clean = git-lfs clean %f
-	smudge = git-lfs smudge %f
 	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
 [diff]
 	mnemonicprefix = true
 	tool = diffmerge
@@ -44,3 +45,5 @@
 	enabled = true
 [merge]
 	stat = true
+[user]
+	name = Colin Ross
